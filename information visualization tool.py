@@ -65,7 +65,7 @@ def plot_c1_c3_difference(data):
     ]
     colors = [COLOR_MAP["C1"], COLOR_MAP["C3"]]
 
-    plt.figure(figsize=(8,12))  
+    plt.figure(figsize=(8,9))  
     plt.bar(labels, accuracies, color=colors)
     plt.ylim(0, 1)
     plt.title('Impact of Fine-Tuning on Clean Data')
@@ -89,7 +89,7 @@ def plot_c3_noise_impact(data):
     ]
     colors = [COLOR_MAP["C3"], COLOR_MAP["C3"]]
 
-    plt.figure(figsize=(8,12)) 
+    plt.figure(figsize=(8,9)) 
     plt.bar(labels, accuracies, color=colors)
     plt.ylim(0, 1)
     plt.title('Impact of Noise on C3 Accuracy')
@@ -126,7 +126,7 @@ def plot_c3_n1_n3_comparison(data, mode="clean"):
         filename = "fig_c3_n1_n3_noisy.png"
         title = "Performance on Noisy Data after Noisy Fine-Tuning"
 
-    plt.figure(figsize=(16, 9))  
+    plt.figure(figsize=(8, 9))  
     plt.bar(labels, accuracies, color=colors)
     plt.ylim(0, 1)
     plt.title(title)
